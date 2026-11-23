@@ -16,6 +16,17 @@
 """
 
 # Your Solution...
+intNumber=10
+floatNumber=9.81
+string="Python Essentials"
+list=[1,2,3,4,5]
+tuple=(50,100)
+dictionary={"name":"John", "age":28}
+set={1,2,2,3}
+boolean=False
+print(intNumber, "\n", floatNumber,"\n", string,"\n", list,"\n", tuple,"\n", dictionary,"\n", set, "\n",boolean, "\n")
+
+
 
 
 """
@@ -29,6 +40,18 @@
 """
 
 # Your Solution...
+for i in range(10,0,-1):
+    print(i)
+print("\n")
+i=2
+while i<10:
+    if i%2==0:
+        print(i)
+    i=i+1
+print("\n")
+myList=[x**3 for x in range(1,6)]
+print(myList, "\n")
+
 
 
 """
@@ -45,6 +68,25 @@
 """
 
 # Your Solution...
+def area_of_circle(radius):
+    return 3.14*radius*radius
+
+def is_even(num):
+    if num%2==0:
+        return True
+    else:
+        return False
+
+var = lambda num1, num2: num1 + num2
+
+print(area_of_circle(5))
+print(is_even(17))
+print(var(4,5))
+
+
+
+
+
 
 
 """
@@ -58,6 +100,12 @@
 """
 
 # Your Solution...
+import math
+import numpy as np
+from random import randint
+arr=np.array([10,20,30,40,50])
+print(math.sqrt(64),arr,randint(5,15), "\n")
+
 
 
 """
@@ -68,6 +116,12 @@
 """
 
 # Your Solution...
+import sympy as sp
+
+x=sp.symbols('x')
+equation=x**2-5*x+6
+result=sp.solve(equation)
+print(result, "\n")
 
 
 """
@@ -80,3 +134,7 @@
 """
 
 # Your Solution...
+A=np.array([[4,3],[2,-1]])
+B=np.array([20,2])
+solution=np.linalg.solve(A,B)
+print(solution, "\n")
